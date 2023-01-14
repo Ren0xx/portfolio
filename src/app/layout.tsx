@@ -1,18 +1,28 @@
-import './globals.css'
+'use client'
+import "./globals.css";
+import { CssBaseline, ThemeProvider, Container } from "@mui/material";
 
+import { useMemo } from "react";
+import useTheme from "@/styles/theme/useTheme";
+import { darkTheme, lightTheme } from "@/styles/theme/themes";
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
-    </html>
-  )
+    const theme = useTheme((state: { theme: any }) => state.theme);
+    const selectedTheme = useMemo(() => {
+        return theme === "light" ? lightTheme : darkTheme;
+    }, [theme]);
+    return (
+        <html lang='en'>
+            <head />
+            <ThemeProvider theme={selectedTheme}>
+                <body>
+                    <Container>{children}</Container>
+                    <CssBaseline />
+                </body>
+            </ThemeProvider>
+        </html>
+    );
 }
