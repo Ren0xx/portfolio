@@ -1,7 +1,13 @@
+import {Box, Grid, Typography} from "@mui/material"
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <section id="Skills">
+      <Typography variant='h2' >Skills</Typography>
+      <Grid container > 
+
+      </Grid>
+      </section>
   )
 }
 

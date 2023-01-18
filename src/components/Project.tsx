@@ -1,3 +1,4 @@
+"use client";
 import {
     Card,
     CardMedia,
@@ -5,6 +6,7 @@ import {
     CardActions,
     Typography,
     Button,
+    Box,
 } from "@mui/material";
 import type Project from "@/utils/project";
 const Project = (props: Project) => {
@@ -17,8 +19,13 @@ const Project = (props: Project) => {
         photo,
     } = props;
     return (
-        <Card sx={{ maxWidth: 400 }}>
-            <CardMedia sx={{ height: 140 }} image={photo} title={projectName} />
+        <Card
+            sx={{
+                maxWidth: 400,
+                // maxHeight: 400,
+                textAlign: "center",
+            }}>
+            <CardMedia sx={{ height: 180 }} image={photo} title={projectName} />
             <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
                     {projectName}
@@ -26,12 +33,33 @@ const Project = (props: Project) => {
                 <Typography variant='body2' color='text.secondary'>
                     {description}
                 </Typography>
+                <div>
+                    <Typography variant='h6'> Tech stack </Typography>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                        }}>
+                        {techStack.map((item) => (
+                            <Typography
+                                variant='body2'
+                                color='text.secondary'
+                                key={item}>
+                                {item}
+                            </Typography>
+                        ))}
+                    </Box>
+                </div>
             </CardContent>
-            <CardActions>
-                <Button size='small' variant='outlined' href={livePreview}>
+            <CardActions
+                sx={{
+                    display: "flex",
+                    justifyContent: "space-around",
+                }}>
+                <Button size='large' variant='outlined' href={livePreview}>
                     Live preview
                 </Button>
-                <Button size='small' variant='outlined' href={sourceCode}>
+                <Button size='large' variant='outlined' href={sourceCode}>
                     Source Code
                 </Button>
             </CardActions>

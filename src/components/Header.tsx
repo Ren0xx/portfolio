@@ -1,3 +1,5 @@
+'use client'
+import { useState, useEffect } from "react";
 import Logo from "../../public/logo.png";
 import styles from "@/styles/components.module.css";
 import ThemeSwitchButton from "@/components/ThemeSwitchButton";
@@ -15,8 +17,18 @@ import {
 //mui icons
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 const Header = () => {
     const sections = ["Projects", "Skills", "About"];
+    const [selectedSection, setSelectedSection] = useState<string | null>(null);
+
+    //scrolling into section
+    useEffect(() => {
+        if (!selectedSection) return;
+        const element = document.getElementById(selectedSection);
+        element?.scrollIntoView({ behavior: "smooth" });
+        setSelectedSection(null);
+    }, [selectedSection]);
     return (
         <header>
             <AppBar position='static' color='transparent'>
@@ -48,7 +60,11 @@ const Header = () => {
                                 <Button
                                     key={section}
                                     color='secondary'
-                                    href={`#${section}`}>
+                                    href={`#${section}`}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setSelectedSection(section);
+                                    }}>
                                     <Typography textAlign='center' variant='h6'>
                                         {section}
                                     </Typography>
@@ -56,9 +72,10 @@ const Header = () => {
                             ))}
                         </Box>
                         <Box
-                        // sx={{ ml: "auto" }}
                         >
-                            <IconButton size='large' href='#'>
+                            <IconButton
+                                size='large'
+                                href='https://github.com/Ren0xx'>
                                 <GitHubIcon fontSize='inherit' />
                             </IconButton>
                             <IconButton size='large'>
