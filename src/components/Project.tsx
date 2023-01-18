@@ -38,13 +38,14 @@ const Project = (props: Project) => {
                     <Box
                         sx={{
                             display: "flex",
-                            justifyContent: "space-between",
+                            justifyContent: "space-around",
                         }}>
                         {techStack.map((item) => (
                             <Typography
                                 variant='body2'
                                 color='text.secondary'
-                                key={item}>
+                                key={item}
+                                >
                                 {item}
                             </Typography>
                         ))}

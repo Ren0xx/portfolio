@@ -2,7 +2,7 @@
     {
         "projectName": "Twitter Clone",
         "description": "Twitter clone with most of the features from the original. You can create your own account, add tweets and many more",
-        "techStack": ["Firebase", "Next.js", "TypeScript", "Material UI"],
+        "techStack": ["Firebase", "Next.js", "Typescript", "Material UI"],
         "livePreview": "https://twitter-clone-lavrfjs1x-ren0xx.vercel.app/",
         "sourceCode": "https://github.com/Ren0xx/twitter-clone",
         "photo": "/images/twitterClone.png"
@@ -10,13 +10,7 @@
     {
         "projectName": "Where is Waldo",
         "description": "Photo tagging app, based on Where's Waldo books. Your task is to find all characters in shortest time possible. The scoreboard is included.",
-        "techStack": [
-            "Firebase",
-            "React",
-            "TypeScript",
-            "Material UI",
-            "React Router"
-        ],
+        "techStack": ["Firebase", "React", "Typescript", "Material UI"],
         "livePreview": "https://ren0xx.github.io/Where-is-Waldo",
         "sourceCode": "https://github.com/Ren0xx/Where-is-Waldo",
         "photo": "/images/whereis.png"
@@ -24,7 +18,7 @@
     {
         "projectName": "Memory card game",
         "description": "Test your memory - get points by clicking on an images but don't click on any more than once!The cards are taken from Blizzard's Entertainment game called Hearthstone.",
-        "techStack": ["React", "Css", "JavaScript"],
+        "techStack": ["React", "Css", "Javascript"],
         "livePreview": "https://ren0xx.github.io/Memory-Card-Game",
         "sourceCode": "https://github.com/Ren0xx/Memory-Card-Game",
         "photo": "/images/memory.png"
@@ -48,7 +42,7 @@
     {
         "projectName": "To-do App",
         "description": "To-do app lets you write, organize, and prioritize your tasks. You can create new projects/lists, that contains tasks to do. The tasks are stored in localStorage",
-        "techStack": ["Html", "Css", "JavaScript", "Sweetalert2"],
+        "techStack": ["Html", "Css", "Javascript", "Sweetalert2"],
         "livePreview": "https://ren0xx.github.io/To-do",
         "sourceCode": "https://github.com/Ren0xx/To-do",
         "photo": "/images/todo.png"
