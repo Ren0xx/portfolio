@@ -22,9 +22,9 @@ const Project = (props: Project) => {
         <Card
             sx={{
                 maxWidth: 400,
-                // maxHeight: 400,
                 textAlign: "center",
-            }}>
+            }}
+            variant='outlined'>
             <CardMedia sx={{ height: 180 }} image={photo} title={projectName} />
             <CardContent>
                 <Typography gutterBottom variant='h5' component='div'>
@@ -44,8 +44,7 @@ const Project = (props: Project) => {
                             <Typography
                                 variant='body2'
                                 color='text.secondary'
-                                key={item}
-                                >
+                                key={item}>
                                 {item}
                             </Typography>
                         ))}
