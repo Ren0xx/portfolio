@@ -1,7 +1,7 @@
 export default function Head() {
     return (
         <>
-            <title>Portfolio</title>
+            <title>Adam Załęski - Fullstack typescript developer</title>
             <meta
                 content='width=device-width, initial-scale=1'
                 name='viewport'

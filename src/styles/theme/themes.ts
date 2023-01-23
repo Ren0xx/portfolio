@@ -14,9 +14,8 @@ export const darkTheme = createTheme({
           paper: '#000000',
         },
         info: {
-          main: '#3949ab',
+          main: '#0288d1',
         },
-        
       },
       typography: {
         button: {
@@ -26,11 +25,11 @@ export const darkTheme = createTheme({
           fontSize: '1.2rem',
         },
         h2: {
-          background: "-webkit-linear-gradient(279deg, rgba(115,115,115,1) 0%, rgba(255,255,255,1) 100%)",
+          background: "-webkit-linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 40%)",
           WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent"
+          WebkitTextFillColor: "transparent",
+          fontWeight: "700"
         }
-        
       },
       
       
@@ -54,5 +53,11 @@ export const lightTheme = createTheme({
         subtitle1: {
           fontSize: '1.2rem',
         },
+        h2: {
+          background: "-webkit-linear-gradient(15deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 40%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          fontWeight: "700"
+        }
       },
 })
