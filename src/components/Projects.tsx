@@ -14,7 +14,9 @@ const Projects = () => {
             }}>
             <Typography variant='h2' sx={{ my: "0.5em" }}>
                 Projects
+                <hr />
             </Typography>
+            
             <Grid
                 container
                 justifyContent='center'

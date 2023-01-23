@@ -10,7 +10,7 @@ export const darkTheme = createTheme({
           main: '#ede7f6',
         },
         background: {
-          default: '#0f1624',
+          default: '#020a13',
           paper: '#000000',
         },
         info: {
@@ -22,6 +22,14 @@ export const darkTheme = createTheme({
         button: {
           textTransform: 'none'
         },
+        subtitle1: {
+          fontSize: '1.2rem',
+        },
+        h2: {
+          background: "-webkit-linear-gradient(279deg, rgba(115,115,115,1) 0%, rgba(255,255,255,1) 100%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent"
+        }
         
       },
       
@@ -42,6 +50,9 @@ export const lightTheme = createTheme({
       typography: {
         button: {
           textTransform: 'none',
+        },
+        subtitle1: {
+          fontSize: '1.2rem',
         },
       },
 })
