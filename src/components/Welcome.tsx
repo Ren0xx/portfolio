@@ -1,7 +1,11 @@
 "use client";
 import { Box, Button, Typography, Link } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
 const Welcome = () => {
+    const smallSc: boolean = useMediaQuery((theme: any) =>
+        theme.breakpoints.up("sm")
+    );
     return (
         <section>
             <Box sx={{ display: "flex" }}>
@@ -11,6 +15,7 @@ const Welcome = () => {
                         flexDirection: "column",
                         justifyContent: "center",
                         gap: "0.9em",
+                        padding: "0.5em",
                     }}>
                     <Typography sx={{ letterSpacing: 2 }} variant='h2'>
                         Hey there!
@@ -28,7 +33,7 @@ const Welcome = () => {
                         color='secondary'
                         size='large'
                         target='_blank'
-                        href='#'
+                        href='https://rxresu.me/r/xIqRVlTz'
                         sx={{
                             minWidth: 200,
                             alignSelf: "center",
@@ -41,8 +46,8 @@ const Welcome = () => {
                 <Image
                     src='/images/computer.png'
                     alt='...'
-                    width={400}
-                    height={400}
+                    width={smallSc ? 400 : 0}
+                    height={smallSc ? 400 : 0}
                 />
             </Box>
         </section>

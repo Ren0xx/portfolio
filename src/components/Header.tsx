@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Logo from "../../public/logo.png";
+import Logo from "../../public/images/logo.png";
 import ThemeSwitchButton from "@/components/ThemeSwitchButton";
 import Image from "next/image";
 import {
@@ -34,10 +34,15 @@ const Header = () => {
                         sx={{
                             flexGrow: 1,
                             display: "flex",
-                            gap: "5em",
-                            justifyContent: "space-between",
+                            flexWrap: "wrap",
+                            justifyContent: "center",
                         }}>
-                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                alignItems: "center",
+                                mr: "auto",
+                            }}>
                             <ThemeSwitchButton />
                             <Image
                                 src={Logo}
@@ -50,7 +55,7 @@ const Header = () => {
                         <Box
                             sx={{
                                 display: "flex",
-                                justifyContent: "space-around",
+                                justifyContent: "space-between",
                                 gap: "3.5em",
                             }}>
                             {sections.map((section) => (
@@ -68,7 +73,7 @@ const Header = () => {
                                 </Button>
                             ))}
                         </Box>
-                        <Box>
+                        <Box sx={{ ml: "auto" }}>
                             <IconButton
                                 size='large'
                                 href='https://github.com/Ren0xx'>
