@@ -42,6 +42,10 @@ export const lightTheme = createTheme({
           main: '#1d9bf0'
         },
         secondary: {main: '#1d1d1d'},
+        background: {
+          default: '#f3f3f3',
+          paper: '#f0f0f0'
+        },
         info: {
           main: '#0288d1',
         },
