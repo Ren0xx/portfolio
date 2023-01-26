@@ -49,7 +49,7 @@ const Footer = () => (
             }}>
             <Box sx={{ display: "flex", gap: "0.2em" }}>
                 ©{new Date().getFullYear()}
-                <Typography color='info.main'>Adam Załęski</Typography>. All
+                <Typography color='info.main'>Adam Załęski.</Typography>All
                 rights reserved.
             </Box>
             <Box>

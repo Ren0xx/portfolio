@@ -1,7 +1,6 @@
-'use client'
+"use client";
 import { useState, useEffect } from "react";
 import Logo from "../../public/logo.png";
-import styles from "@/styles/components.module.css";
 import ThemeSwitchButton from "@/components/ThemeSwitchButton";
 import Image from "next/image";
 import {
@@ -11,8 +10,6 @@ import {
     Toolbar,
     Typography,
     IconButton,
-    Menu,
-    MenuItem,
 } from "@mui/material";
 //mui icons
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -71,14 +68,15 @@ const Header = () => {
                                 </Button>
                             ))}
                         </Box>
-                        <Box
-                        >
+                        <Box>
                             <IconButton
                                 size='large'
                                 href='https://github.com/Ren0xx'>
                                 <GitHubIcon fontSize='inherit' />
                             </IconButton>
-                            <IconButton size='large'>
+                            <IconButton
+                                size='large'
+                                href='https://www.linkedin.com/in/adam-za%C5%82%C4%99ski-8a6430200/'>
                                 <LinkedInIcon fontSize='inherit' />
                             </IconButton>
                         </Box>

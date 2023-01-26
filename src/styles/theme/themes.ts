@@ -16,6 +16,7 @@ export const darkTheme = createTheme({
         info: {
           main: '#0288d1',
         },
+        
       },
       typography: {
         button: {
@@ -25,7 +26,7 @@ export const darkTheme = createTheme({
           fontSize: '1.2rem',
         },
         h2: {
-          background: "-webkit-linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 40%)",
+          background: "-webkit-linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(20,20,20,1) 50%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           fontWeight: "700"
@@ -42,7 +43,7 @@ export const lightTheme = createTheme({
         },
         secondary: {main: '#1d1d1d'},
         info: {
-          main: '#ffffff',
+          main: '#0288d1',
         },
         
       },
@@ -54,7 +55,7 @@ export const lightTheme = createTheme({
           fontSize: '1.2rem',
         },
         h2: {
-          background: "-webkit-linear-gradient(15deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 40%)",
+          background: "-webkit-linear-gradient(15deg, rgba(0,0,0,1) 0%, rgba(235,235,235,1) 60%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           fontWeight: "700"

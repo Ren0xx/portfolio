@@ -56,10 +56,10 @@ const Project = (props: Project) => {
                     display: "flex",
                     justifyContent: "space-around",
                 }}>
-                <Button size='large' variant='outlined' href={livePreview}>
+                <Button size='large' variant='contained' color='secondary'  href={livePreview}>
                     Live preview
                 </Button>
-                <Button size='large' variant='outlined' href={sourceCode}>
+                <Button size='large' variant='contained' color='secondary' href={sourceCode}>
                     Source Code
                 </Button>
             </CardActions>
