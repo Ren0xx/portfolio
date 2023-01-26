@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Logo from "../../public/images/logo.png";
 import ThemeSwitchButton from "@/components/ThemeSwitchButton";
-import Image from "next/image";
 import {
     AppBar,
     Box,
@@ -44,12 +42,7 @@ const Header = () => {
                                 mr: "auto",
                             }}>
                             <ThemeSwitchButton />
-                            <Image
-                                src={Logo}
-                                width={50}
-                                height={40}
-                                alt='...'
-                            />
+
                             <Typography variant='h6'>Adam Załęski</Typography>
                         </Box>
                         <Box
