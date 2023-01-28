@@ -26,7 +26,7 @@ export const darkTheme = createTheme({
           fontSize: '1.2rem',
         },
         h2: {
-          background: "-webkit-linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(20,20,20,1) 50%)",
+          background: "-webkit-linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(40,40,40,1) 30%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           fontWeight: "700"
@@ -59,7 +59,7 @@ export const lightTheme = createTheme({
           fontSize: '1.2rem',
         },
         h2: {
-          background: "-webkit-linear-gradient(15deg, rgba(0,0,0,1) 0%, rgba(235,235,235,1) 60%)",
+          background: "-webkit-linear-gradient(15deg, rgba(0,0,0,1) 0%, rgba(200,200,200,1) 60%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           fontWeight: "700"

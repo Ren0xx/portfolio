@@ -17,15 +17,23 @@ const Welcome = () => {
                         gap: "0.9em",
                         padding: "0.5em",
                     }}>
-                    <Typography sx={{ letterSpacing: 2 }} variant='h2'>
+                    <Typography
+                        sx={{ letterSpacing: 2, mt: "0.8em" }}
+                        variant='h2'>
                         Hey there!
                     </Typography>
                     <Typography
                         sx={{ fontSize: "1.5em" }}
                         variant='body1'
                         color='text.secondary'>
-                        I&apos;m a full stack developer who uses Typescript in
-                        most of the projects.
+                        "Welcome to my portfolio site! I specialize in
+                        full-stack web development using technologies such as
+                        Next.js, TypeScript, and more. Feel free to browse my
+                        projects and contact me if you're interested in working
+                        together.
+                        <br />
+                        <br />
+                        Thank you for visiting!"
                     </Typography>
                     <Button
                         component={Link}
