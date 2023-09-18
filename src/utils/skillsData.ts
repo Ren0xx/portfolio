@@ -7,6 +7,7 @@ import {
     IconBrandFirebase,
 } from "@tabler/icons";
 
+import { IconBrandNodejs } from '@tabler/icons-react';
 const cards = [
     {
         icon: IconBrandNextjs,
@@ -30,9 +31,9 @@ const cards = [
         description: "A version control system that i use every day.",
     },
     {
-        icon: IconBrandReact,
-        title: "React",
-        description: "A JavaScript library for building user interfaces.",
+        icon: IconBrandNodejs,
+        title: "Node.js",
+        description: "Node.js is a pivotal technology in the realm of backend development, harnessing JavaScript's power to build efficient and performant server-side applications."
     },
     {
         icon: IconBrandJavascript,
