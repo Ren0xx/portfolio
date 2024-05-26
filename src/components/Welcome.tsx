@@ -41,7 +41,7 @@ const Welcome = () => {
                         color='secondary'
                         size='large'
                         target='_blank'
-                        href='https://rxresu.me/r/xIqRVlTz'
+                        href='https://rxresu.me/zaleski/adam-zaleski-english'
                         sx={{
                             minWidth: 200,
                             alignSelf: "center",
