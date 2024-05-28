@@ -1,5 +1,6 @@
 "use client";
 import { Box, Button, Typography, Link } from "@mui/material";
+import ResumeButton from "@/components/ResumeButton";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
 const Welcome = () => {
@@ -35,21 +36,7 @@ const Welcome = () => {
                         <br />
                         Thank you for visiting!"
                     </Typography>
-                    <Button
-                        component={Link}
-                        variant='contained'
-                        color='secondary'
-                        size='large'
-                        target='_blank'
-                        href='https://rxresu.me/zaleski/adam-zaleski-english'
-                        sx={{
-                            minWidth: 200,
-                            alignSelf: "center",
-                            borderRadius: "3em",
-                            p: "1em",
-                        }}>
-                        <Typography variant='h5'>My Resume</Typography>
-                    </Button>
+                    <ResumeButton />
                 </Box>
                 <Image
                     src='/images/computer.png'
