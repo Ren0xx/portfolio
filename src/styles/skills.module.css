@@ -1,7 +1,7 @@
 .skills__card {
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 2fr 5fr;
+    grid-template-rows: 1fr 4fr;
     gap: 0.3em
 }
 

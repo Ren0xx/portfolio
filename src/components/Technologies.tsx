@@ -1,13 +1,12 @@
-import { Box, Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import {  Grid, Typography } from "@mui/material";
 //card data
-import cards from "@/utils/skillsData";
-import Skill from "@/components/Skill";
-const Skills = () => {
+import cards from "@/utils/technologiesData";
+import Technology from "@/components/Technology";
+const Technologies = () => {
     return (
-        <section id='Skills'>
+        <section id='Technologies'>
             <Typography variant='h2'>
-                Skills
+               Technologies 
                 <hr />
             </Typography>
             <Typography
@@ -24,7 +23,7 @@ const Skills = () => {
                 {cards.map((card, index) => {
                     return (
                         <Grid key={index} item xs={12} md={6} lg={4}>
-                            <Skill
+                            <Technology
                                 icon={card.icon}
                                 title={card.title}
                                 description={card.description}
@@ -37,4 +36,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default Technologies;

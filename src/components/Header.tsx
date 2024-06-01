@@ -14,7 +14,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Header = () => {
-    const sections = ["Projects", "Skills", "About"];
+    const sections = ["Projects", "Technologies", "About"];
     const [selectedSection, setSelectedSection] = useState<string | null>(null);
 
     //scrolling into section

@@ -1,14 +1,14 @@
 'use client'
 import Projects from "@/components/Projects"
 import Welcome from "@/components/Welcome"
-import Skills from "@/components/Skills"
+import Technologies from "@/components/Technologies"
 import About from "@/components/About"
 const Main = () => {
   return (
     <main>
       <Welcome />
       <Projects />
-      <Skills />
+      <Technologies />
       <About />
     </main>
   )

@@ -6,7 +6,7 @@ type SkillData = {
     title: string;
     description: string;
 };
-const Skill: React.FC<SkillData> = ({ icon, title, description }) => {
+const Technology: React.FC<SkillData> = ({ icon, title, description }) => {
     const Icon = icon;
     return (
         <div className={styles.skills__card}>
@@ -26,4 +26,4 @@ const Skill: React.FC<SkillData> = ({ icon, title, description }) => {
     );
 };
 
-export default Skill;
+export default Technology;
