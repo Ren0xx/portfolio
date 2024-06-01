@@ -1,22 +1,21 @@
-.skills__card {
+.technologies__card {
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 1fr 4fr;
     gap: 0.3em
 }
 
-.skills__card__icon {
+.technologies__card__icon {
     grid-row: 1/2;
     grid-column: 1/2;
 }
 
-.skills__card__title {
+.technologies__card__title {
     grid-row: 1/2;
     grid-column: 2/3;
-    font-size: 1.6em;
 }
 
-.skills__card__desc {
+.technologies__card__desc {
     grid-row: 2/3;
     grid-column: 2/3;
     font-size: 1.2em;

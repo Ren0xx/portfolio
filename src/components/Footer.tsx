@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, IconButton, Typography, Link } from "@mui/material";
+import { useTheme } from "@mui/material/styles"
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Footer = () => {
-    const smallSc: boolean = useMediaQuery((theme: any) =>
-        theme.breakpoints.up("sm")
-    );
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.up('sm'));
     return (
         <footer>
             <hr />
@@ -16,7 +16,7 @@ const Footer = () => {
                     display: "flex",
                     justifyContent: "flex-start",
                     alignItems: "center",
-                    gap: !smallSc ? "0.7em" : "9em",
+                    gap: !isSmallScreen? "0.7em" : "9em",
                     my: "2em",
                 }}>
                 <div>

@@ -12,7 +12,7 @@ const Technologies = () => {
             <Typography
                 variant='subtitle1'
                 color='text.secondary'
-                sx={{ my: "0.7em" }}>
+                sx={{ my: "1em" }}>
                 I&apos;ve worked with multiple technologies as a developer to
                 develop & maintain my projects.
             </Typography>

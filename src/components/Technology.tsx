@@ -1,6 +1,6 @@
-import { Typography } from "@mui/material";
+import { Box,Typography } from "@mui/material";
 import { TablerIcon } from "@tabler/icons";
-import styles from "@/styles/skills.module.css";
+import styles from "@/styles/technologies.module.css";
 type SkillData = {
     icon: TablerIcon;
     title: string;
@@ -9,20 +9,20 @@ type SkillData = {
 const Technology: React.FC<SkillData> = ({ icon, title, description }) => {
     const Icon = icon;
     return (
-        <div className={styles.skills__card}>
-            <Typography variant='h4' className={styles.skills__card__title}>
+        <Box className={styles.technologies__card} > 
+            <Typography variant='h4' sx={{gridRow: "1/2", gridColumn:'2/3'}}>
                 {title}
             </Typography>
             <Typography
                 variant='body2'
                 color='text.secondary'
-                className={styles.skills__card__desc}>
+                sx={{gridRow: "2/3", gridColumn: "2/3", fontSize: "1.2em"}}>
                 {description}
             </Typography>
-            <div className={styles.skills__card__icon}>
+            <div className={styles.technologies__card__icon}>
                 <Icon size={40} />
             </div>
-        </div>
+        </Box>
     );
 };
 

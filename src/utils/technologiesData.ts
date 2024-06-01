@@ -59,14 +59,15 @@ const cards = [
 	},
 	{
 		icon: IconBrandVscode,
-		title: "Visual Studio Code",
+		title: "VS Code",
 		description:
 			"Open-source code editor developed by Microsoft, known for its extensive features and extensions.",
 	},
 	{
 		icon: IconBrandGit,
 		title: "Git",
-		description: "A version control system that tracks changes in the source code.",
+		description:
+			"A version control system that tracks changes in the source code.",
 	},
 ];
 

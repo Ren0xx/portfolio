@@ -1,12 +1,13 @@
 "use client";
-import { Box, Button, Typography, Link } from "@mui/material";
-import ResumeButton from "@/components/ResumeButton";
+import { Box, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ResumeButton from "@/components/ResumeButton";
 import Image from "next/image";
 const Welcome = () => {
-    const smallSc: boolean = useMediaQuery((theme: any) =>
-        theme.breakpoints.up("sm")
-    );
+    
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.up('sm'));
     return (
         <section>
             <Box sx={{ display: "flex" }}>
@@ -41,8 +42,8 @@ const Welcome = () => {
                 <Image
                     src='/images/computer.png'
                     alt='...'
-                    width={smallSc ? 400 : 0}
-                    height={smallSc ? 400 : 0}
+                    width={isSmallScreen ? 400 : 0}
+                    height={isSmallScreen ? 400 : 0}
                 />
             </Box>
         </section>
