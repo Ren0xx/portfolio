@@ -27,14 +27,14 @@ const Welcome = () => {
                         sx={{ fontSize: "1.5em" }}
                         variant='body1'
                         color='text.secondary'>
-                        "Welcome to my portfolio site! I specialize in
+                        &apos;&apos;Welcome to my portfolio site! I specialize in
                         full-stack web development using technologies such as
                         Next.js, TypeScript, and more. Feel free to browse my
-                        projects and contact me if you're interested in working
+                        projects and contact me if you&apos;re interested in working
                         together.
                         <br />
                         <br />
-                        Thank you for visiting!"
+                        Thank you for visiting!&apos;&apos;
                     </Typography>
                     <ResumeButton />
                 </Box>
