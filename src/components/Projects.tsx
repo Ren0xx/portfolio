@@ -2,7 +2,7 @@
 import projects from "@/utils/projects.json";
 import Project from "@/components/Project";
 
-import { Box, Typography, Grid } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 
 const Projects = () => {
     return (
@@ -16,7 +16,6 @@ const Projects = () => {
                 Projects
                 <hr />
             </Typography>
-            
             <Grid
                 container
                 justifyContent='center'

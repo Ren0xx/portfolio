@@ -9,6 +9,7 @@ import {
     Box,
 } from "@mui/material";
 import type Project from "@/utils/project";
+import { motion } from 'framer-motion';
 const Project = (props: Project) => {
     const {
         projectName,
@@ -19,7 +20,10 @@ const Project = (props: Project) => {
         photo,
     } = props;
     return (
-        <Card
+        <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+        >        <Card
             sx={{
                 maxWidth: 400,
                 textAlign: "center",
@@ -64,6 +68,8 @@ const Project = (props: Project) => {
                 </Button>
             </CardActions>
         </Card>
+    </motion.div>
+
     );
 };
 
