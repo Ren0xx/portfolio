@@ -71,8 +71,8 @@ const ResumesModal = (props: ResumesModalProps) => {
                         Select a resume language
                     </Typography>
                     <Box>
-                        <LinkButton href='https://rxresu.me/zaleski/adam-zaleski-english' text='ENG' />
-                        <LinkButton href='https://rxresu.me/zaleski/adam-zaleski-polskie' text='PL' />
+                        <LinkButton href='https://drive.google.com/file/d/1khG4jrHLPVDk77FWePLsirAzmjJRmDV-/view?usp=drive_link' text='ENG' />
+                        <LinkButton href='https://drive.google.com/file/d/1BW7J3TndunVZpxDnbbjBV2zcCkXFmqMB/view?usp=drive_link' text='PL' />
                     </Box>
                 </Box>
             </Fade>

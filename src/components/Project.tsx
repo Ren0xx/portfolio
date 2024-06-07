@@ -8,8 +8,8 @@ import {
     Button,
     Box,
 } from "@mui/material";
-import type Project from "@/utils/project";
 import { motion } from 'framer-motion';
+import type Project from "@/utils/project";
 const Project = (props: Project) => {
     const {
         projectName,
